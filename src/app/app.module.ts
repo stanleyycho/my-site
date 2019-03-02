@@ -11,12 +11,14 @@ import { MyHomeComponent } from './my-home/my-home.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { MyLinksComponent } from './my-links/my-links.component';
 import { MyCertificatesComponent } from './my-certificates/my-certificates.component';
+import { MyResourcesComponent } from './my-resources/my-resources.component';
 
 const appRoutes: Routes = [
   { path: '', component: MyHomeComponent },
   { path: 'projects', component: MyProjectsComponent },
   { path: 'links', component: MyLinksComponent },
-  { path: 'certs', component: MyCertificatesComponent }
+  { path: 'certs', component: MyCertificatesComponent },
+  { path: 'resources', component: MyResourcesComponent }
 ];
 
 @NgModule({
@@ -26,7 +28,8 @@ const appRoutes: Routes = [
     MyHomeComponent,
     MyProjectsComponent,
     MyLinksComponent,
-    MyCertificatesComponent
+    MyCertificatesComponent,
+    MyResourcesComponent
   ],
   imports: [
     BrowserModule,
