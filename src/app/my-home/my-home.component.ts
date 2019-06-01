@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyHomeComponent implements OnInit {
 
-  about_me = "I'm Stanley, an engineer interested in image processing and software engineering. At <a href=\"https://www.roche.com/\">Roche</a>, I'm building platform and algorithms for pathology image analysis. <br> Currently, I'm learning deep learning (DL) in order to increase image analysis accuracy and building DL data pipeline. <br> <br> In my own time I enjoy learning new things, including technology, and exploring National Parks."
+  about_me = "I'm Stanley, an engineer interested in image processing and software engineering. At <a href=\"https://www.roche.com/\">Roche</a>, I'm building platform and algorithms for pathology image analysis. <br> I like to solve engineering problems and enthusiasm in C++ dvelopment. Currently, I'm building deep learning (DL) data pipeline and learning DL in order to increase image analysis accuracy. <br> <br> In my own time I enjoy learning new things, including technology, and exploring National Parks."
 
   constructor() { }
 

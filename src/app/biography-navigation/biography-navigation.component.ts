@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class BiographyNavigationComponent implements OnInit {
 
-  title = "Biography";
+  title = "Bio";
   name = 'Stanley Ho';
 
   constructor() { }
