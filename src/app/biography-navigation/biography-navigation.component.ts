@@ -1,19 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-biography-navigation',
   templateUrl: './biography-navigation.component.html',
   styleUrls: ['./biography-navigation.component.css']
 })
-export class BiographyNavigationComponent implements OnInit {
+export class BiographyNavigationComponent implements OnDestroy {
+  mobileQuery: MediaQueryList;
 
-  title = "Bio";
   name = 'Stanley Ho';
 
-  constructor() { }
+  private mobileQueryListener: () => void;
 
-  ngOnInit() {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+    this.mobileQuery = media.matchMedia('(max-width: 600px)');
+    this.mobileQueryListener = () => changeDetectorRef.detectChanges();
+    this.mobileQuery.addListener(this.mobileQueryListener);
   }
 
+  ngOnDestroy(): void {
+    this.mobileQuery.removeListener(this.mobileQueryListener);
+  }
 }
