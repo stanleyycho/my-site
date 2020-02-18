@@ -11,6 +11,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -52,6 +53,7 @@ const appRoutes: Routes = [
     MatIconModule,
     MatCardModule,
     MatButtonModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

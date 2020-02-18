@@ -1,16 +1,10 @@
-<mat-list>
-    <mat-card>
-      <mat-list-item *ngFor="let project of projects">
-          <mat-card-header>
-            <mat-card-subtitle>
-              {{project.name}}
-            </mat-card-subtitle>
-          </mat-card-header>
-            <mat-card-content>
-              <p>
-              {{project.description}}
-              </p>
-            </mat-card-content>
-      </mat-list-item>
-  </mat-card>
-</mat-list>
+<mat-accordion multi="true">
+  <mat-expansion-panel *ngFor="let project of projects">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{project.name}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>{{project.description}}</p>
+  </mat-expansion-panel>
+</mat-accordion>
