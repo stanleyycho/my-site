@@ -1,11 +1,11 @@
 <mat-list>
-    <mat-card>
-      <mat-list-item *ngFor="let cert of certs">
-            <mat-card-content>
-              <a href={{cert.url}}>
-              {{cert.name}} from {{cert.org}}
-              </a>
-            </mat-card-content>
-      </mat-list-item>
+  <mat-card>
+    <mat-list-item *ngFor="let cert of certs">
+      <mat-card-content>
+        <a href={{cert.url}}>
+          {{cert.name}} from {{cert.org}}
+        </a>
+      </mat-card-content>
+    </mat-list-item>
   </mat-card>
 </mat-list>

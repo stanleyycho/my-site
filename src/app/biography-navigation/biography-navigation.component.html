@@ -1,24 +1,23 @@
-<mat-sidenav-container class="sidenav-container">
-    <mat-sidenav
-      #drawer
-      class="sidenav"
-      fixedTopGap=10
-      [fixedInViewport]="true"
-      [mode]="'side'"
-      [opened]="true">
-      <mat-toolbar>{{title}}</mat-toolbar>
+<div class="bio-nav-container" [class.is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="nav-toolbar">
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="title-text">{{name}}</h1>
+  </mat-toolbar>
+  <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #drawer class="sidenav" fixedTopGap=10 [fixedInViewport]="mobileQuery.matches"
+      [mode]="mobileQuery.matches ? 'over' : 'side'" [opened]="true">
       <mat-nav-list>
-        <a mat-list-item href="/">Home</a>
-        <a mat-list-item href="/projects">Projects</a>
-        <a mat-list-item href="/links">Links</a>
-        <a mat-list-item href="/certs">Certificates</a>
-        <a mat-list-item href="/resources">Resources</a>
+        <a mat-list-item routerLink="/">Home</a>
+        <a mat-list-item routerLink="/projects">Projects</a>
+        <a mat-list-item routerLink="/links">Links</a>
+        <a mat-list-item routerLink="/certs">Certificates</a>
+        <a mat-list-item routerLink="/resources">Resources</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-      <mat-toolbar>
-        <span>{{name}}</span>
-      </mat-toolbar>
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
+</div>
