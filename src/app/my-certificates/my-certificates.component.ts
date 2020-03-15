@@ -11,6 +11,11 @@ export class MyCertificatesComponent implements OnInit {
   certs: Certificate[] = [
     {
       org: 'Coursera',
+      name: 'Deep Learning Specialization',
+      url: 'https://www.coursera.org/account/accomplishments/specialization/G8TS8APA3NK6'
+    },
+    {
+      org: 'Coursera',
       name: 'TensorFlow in Practice Specialization',
       url: 'https://www.coursera.org/account/accomplishments/specialization/ACYMK9U2ARYZ'
     },
