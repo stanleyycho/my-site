@@ -3,12 +3,12 @@
     <button mat-icon-button (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1 class="title-text">{{name}}</h1>
+    <h1 class="title-text mat-headline">{{name}}</h1>
   </mat-toolbar>
   <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-    <mat-sidenav #drawer class="sidenav" fixedTopGap=10 [fixedInViewport]="mobileQuery.matches"
+    <mat-sidenav #drawer class="sidenav" fixedTopGap=56 [fixedInViewport]="mobileQuery.matches"
       [mode]="mobileQuery.matches ? 'over' : 'side'" [opened]="true">
-      <mat-nav-list>
+      <mat-nav-list class="mat-body-strong">
         <a mat-list-item routerLink="/">Home</a>
         <a mat-list-item routerLink="/projects">Projects</a>
         <a mat-list-item routerLink="/links">Links</a>
