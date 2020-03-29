@@ -1,11 +1,11 @@
 <mat-list>
-    <mat-card>
-      <mat-list-item *ngFor="let site of sites">
-            <mat-card-content>
-              <a href={{site.url}}>
-              {{site.name}}
-              </a>
-            </mat-card-content>
-      </mat-list-item>
+  <mat-card>
+    <mat-list-item *ngFor="let site of sites">
+      <mat-card-content class="mat-subheading-1">
+        <a href={{site.url}} class="mat-subheading-1">
+          {{site.name}}
+        </a>
+      </mat-card-content>
+    </mat-list-item>
   </mat-card>
 </mat-list>

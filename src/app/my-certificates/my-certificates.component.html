@@ -2,7 +2,7 @@
   <mat-card>
     <mat-list-item *ngFor="let cert of certs">
       <mat-card-content>
-        <a href={{cert.url}}>
+        <a href={{cert.url}} class="mat-subheading-1">
           {{cert.name}} from {{cert.org}}
         </a>
       </mat-card-content>

@@ -1,10 +1,15 @@
-<mat-card *ngFor="let project of projects" class="container">
-  <mat-card-header>
-    {{project.name}}
-  </mat-card-header>
-  <mat-card-content class="text-container">
-    <p>
-      {{project.description}}
-    </p>
-  </mat-card-content>
+<mat-card *ngFor="let workExperience of workExperiences" class="container">
+  <mat-card-title class="mat-headline">
+    {{workExperience.companyName}}
+  </mat-card-title>
+  <mat-card *ngFor="let project of workExperience.projects" class="container">
+    <mat-card-header class="mat-title">
+      {{project.name}}
+    </mat-card-header>
+    <mat-card-content class="text-container">
+      <p class="mat-body">
+        {{project.description}}
+      </p>
+    </mat-card-content>
+  </mat-card>
 </mat-card>
