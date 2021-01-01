@@ -1,5 +1,6 @@
 export class WorkExperience {
   companyName: string;
+  briefSummary: string;
   projects: Project[];
 }
 

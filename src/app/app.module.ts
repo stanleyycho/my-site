@@ -24,7 +24,7 @@ import { MyResourcesComponent } from './my-resources/my-resources.component';
 
 const appRoutes: Routes = [
   { path: '', component: MyHomeComponent },
-  { path: 'projects', component: MyProjectsComponent },
+  { path: 'experience', component: MyProjectsComponent },
   { path: 'links', component: MyLinksComponent },
   { path: 'certs', component: MyCertificatesComponent },
   { path: 'resources', component: MyResourcesComponent }
