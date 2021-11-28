@@ -11,11 +11,16 @@ export class MyProjectsComponent implements OnInit {
 
   workExperiences: WorkExperience[] = [
     {
-      companyName: "Deepmap",
-      briefSummary: "Contributed to on-board software for building high-definition maps for autonomous vehicles.",
+      companyName: "Nvidia",
+      briefSummary: "Contributed to on-board data collection and fleet management software for building high-definition maps for autonomous vehicles.",
       projects: [
-        { name: 'Data Collection', description: 'Developed data collection coverage analysis feature in C++, which scales up mapping capacity, and mentored interns in the project.' },
-        { name: 'Benchmark', description: 'Built benchmark framework in Python for on-board map change detection service.' },
+      ]
+    },
+    {
+      companyName: "Deepmap (acquired by Nvidia)",
+      briefSummary: "Contributed to on-board softwares for building high-definition maps for autonomous vehicles.",
+      projects: [
+        { name: 'Data Collection and Fleet Management', description: 'Developed fleet management on-board softwares in C++, which scales up mapping capacity, and mentored interns in the project.' },
       ]
     },
     {
